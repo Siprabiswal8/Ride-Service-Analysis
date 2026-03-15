@@ -4,7 +4,7 @@
 
 Ride-hailing companies rely heavily on data to understand demand patterns, optimize pricing strategies, and allocate drivers efficiently.
 
-This project performs a **comparative analysis of two ride services — Namma and Taxi — using SQL, Python, and Power BI** to identify which platform performs better across key operational metrics such as demand, revenue generation, and efficiency.
+This project performs a **comparative analysis of two ride services Namma and Taxi using SQL, Python, and Power BI** to identify which platform performs better across key operational metrics such as demand, revenue generation, and efficiency.
 
 The analysis focuses on uncovering patterns in **ride demand, revenue performance, and service dominance over time**, helping stakeholders make data-driven operational decisions.
 
