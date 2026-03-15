@@ -10,6 +10,22 @@ The analysis focuses on uncovering patterns in **ride demand, revenue performanc
 
 ---
 
+## 🔄 Project Workflow
+
+The analysis followed a structured data analytics pipeline:
+
+Raw Data (Namma Yatri + Taxi datasets)  
+↓  
+Python Data Cleaning & Exploration  
+↓  
+Merged Dataset Creation  
+↓  
+SQL Analytical Queries  
+↓  
+Power BI Dashboard Development  
+↓  
+Business Insights & Recommendations
+
 ## 🎯 Business Problem
 
 Ride service platforms need to answer several critical operational questions:
@@ -29,6 +45,19 @@ By answering these questions, companies can improve:
 - Customer service availability
 
 ---
+
+## ❓ Analytical Questions Explored
+
+This project answers several analytical questions:
+
+- What are the peak ride demand hours?
+- How does ride demand fluctuate across the day?
+- Which service dominates ride volume?
+- Which platform generates higher revenue per ride?
+- Are there sudden spikes in demand?
+- When do revenue anomalies occur?
+- Which hours contribute the most to total earnings?
+- How does service dominance shift throughout the day?
 
 ## 📊 Dataset Description
 
@@ -210,40 +239,53 @@ Revenue anomalies
 
 Efficiency rankings
 
+## 📊 Dashboard Preview
+
+### Executive Overview
+![Executive Dashboard](images/dashboard.png)
+
+### Deep Analysis
+![Deep Analysis](images/dashboard_page2.png)
+
 ## 🔍 Key Insights
-Peak Demand Patterns
 
-Ride demand peaks during evening commute hours, indicating strong commuter-driven usage patterns.
+### Peak Demand Patterns
 
-Market Share Dynamics
+Ride demand peaks between **08:00–11:00**, reaching approximately **67K rides per hour**, indicating strong morning commuter activity.
 
-Namma consistently accounts for a larger share of completed rides, suggesting stronger demand.
+### Market Share Dynamics
 
-Revenue Efficiency
+Namma accounts for **58% of total rides**, while Taxi holds **42%**, showing stronger adoption of Namma in the ride-hailing market.
 
-Taxi generates higher revenue per ride on average, indicating a potentially premium pricing strategy.
+### Revenue Efficiency
 
-Demand Spikes
+Taxi generates significantly higher revenue per ride, averaging **₹28 per ride**, compared to **₹12 per ride for Namma**, suggesting a premium pricing strategy.
 
-Significant demand spikes occur during specific hours, highlighting opportunities for dynamic driver allocation.
+### Demand Fluctuations
+
+Demand drops significantly after **21:00**, indicating reduced late-night ride activity.
+
+### Competitive Dynamics
+
+Although Namma dominates ride volume with **58% market share**, Taxi achieves **higher revenue efficiency**, generating more revenue per ride. This indicates a trade-off between **volume leadership and pricing strategy**.
 
 ## 💡 Business Recommendations
 
-Based on the analysis, the following operational improvements are recommended:
+Based on the analysis, the following operational strategies are recommended:
 
-Increase driver availability during peak demand hours
+- Increase driver availability during **peak hours (08:00–11:00)** when demand exceeds **50K rides per hour**.
 
-Implement dynamic pricing during demand spikes
+- Implement **dynamic pricing during high-demand periods** to maximize revenue.
 
-Optimize driver allocation based on hourly demand patterns
+- Optimize marketing campaigns during **low-demand hours (00:00–05:00)** to stimulate ride demand.
 
-Introduce promotions during low-demand periods
+- Analyze Taxi's **higher revenue per ride (₹28 vs ₹12)** to understand pricing strategies that could improve Namma's profitability.
 
 ## 📂 Project Structure
 Ride-Service-Analysis
 │
 ├── data
-│   └── ride_data.csv
+│   └── ride_comparison.csv
 │
 ├── sql
 │   └── analysis_queries.sql
@@ -252,12 +294,14 @@ Ride-Service-Analysis
 │   └── data_analysis.ipynb
 │
 ├── dashboard
-│   └── powerbi_dashboard.pbix
+│   └── ride_service_performance_dashboard.pbix
 │
 ├── images
-│   └── dashboard_screenshots
+│   ├── dashboard.png
+│   └── dashboard_page2.png
 │
 └── README.md
+
 ## 🧰 Tools & Technologies
 
 SQL (MySQL) – Data querying and analysis
@@ -267,6 +311,18 @@ Python (Pandas, NumPy) – Data exploration and preprocessing
 Power BI – Interactive dashboards and visualizations
 
 Time-Series Analysis – Demand and revenue trend analysis
+
+## 🧠 Skills Demonstrated
+
+This project demonstrates practical data analytics skills including:
+
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- SQL Analytical Querying
+- Window Functions & Time-Series Analysis
+- Data Visualization & Dashboard Design
+- Business Insight Generation
+- End-to-End Data Analytics Workflow
 
 ## 🚀 Future Improvements
 
